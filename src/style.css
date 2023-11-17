@@ -21,3 +21,11 @@
     display: flex;
     justify-content: space-between;
 }
+
+input:user-valid{
+    border-color: green;
+}
+
+input:user-invalid{
+    border-color: red;
+}

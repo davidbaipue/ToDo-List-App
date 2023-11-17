@@ -662,6 +662,14 @@ video {
   justify-content: space-between;
 }
 
+input:user-valid{
+  border-color: green;
+}
+
+input:user-invalid{
+  border-color: red;
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }

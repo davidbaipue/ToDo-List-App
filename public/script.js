@@ -14,13 +14,13 @@ addTaskBtn.addEventListener('click', () => {
         <div class="task_Input text-center md:text-left">
             <label class="txt" for="newTask">Enter Task</label>
             <div class="">
-                <input type="text" class="input_bar" name="newTask" id="newTask"></input>
+                <input type="text" class="input_bar" name="newTask" id="newTask" required></input>
                 <bottom class="btn" id="submitTask">Add</bottom>
             </div>
         </div>
     `;
     not_Completed_Bar.insertAdjacentHTML("afterbegin", task_Input_Section);
-    taskInputSection.remove(); 
+    taskInputSection.remove();
 });
 
 // Getting input value and passing it to our render function
