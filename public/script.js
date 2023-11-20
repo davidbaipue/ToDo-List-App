@@ -55,13 +55,21 @@ function render(taskTxt) {
                     <p>${taskTxt}</p>
                 </div>
                 <div>
-                    <span class="material-symbols-outlined">delete</span>
-                    <span class="material-symbols-outlined">edit</span>
+                    <span class="material-symbols-outlined delete_btn hover:cursor-pointer">delete</span>
+                    <span class="material-symbols-outlined edit_btn hover:cursor-pointer">edit</span>
                 </div>
             </div>
         </div>
     `;
     notCompleteTxt.insertAdjacentHTML("beforeend", task);
+    const delete_btn = document.querySelectorAll('.delete_btn')
+    delete_btn.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            btn.parentNode.parentNode.remove()
+            console.log(btn)
+        })
+    })
+
 }
 
 
